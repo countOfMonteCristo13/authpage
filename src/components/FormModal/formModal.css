@@ -1,0 +1,59 @@
+.task__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.task__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.task__form form input {
+  padding: 0.2rem 0.5rem;
+  width: 100%;
+}
+
+.form__submit-redirect {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.submit-btn {
+  background: #284280;
+  color: white;
+  width: auto;
+}
+
+.toggle-modal-link {
+  background: none;
+  text-decoration: underline;
+  color: #284280;
+}
+
+.close-modal-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #284280;
+  color: white;
+  padding: 0.2rem 0.4rem;
+}
+
+input[type='submit'] {
+  border-width: 0;
+  border-style: none;
+  font-weight: bold;
+}
+
+input[type='submit']:not(:disabled):hover {
+  background: white;
+  color: #284280;
+}
+
+input[type='submit']:disabled {
+  cursor: no-drop;
+}
