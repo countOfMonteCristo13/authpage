@@ -44,10 +44,7 @@ const FormModal: React.FC<FormProps> = ({ title, redirectLink, closeModal, toggl
           {errors.email && <p className="input-error">{errors.email?.message}</p>}
         </div>
         <div>
-          <input
-            placeholder="Password"
-            {...register('password', { required: true, minLength: 3 })}
-          />
+          <input placeholder="Password" {...register('password', { required: true })} />
           {errors.password && <p className="input-error">{errors.password?.message}</p>}
         </div>
         <div className="form__submit-redirect">
